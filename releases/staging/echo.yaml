@@ -1,0 +1,18 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: echo-staging
+  namespace: staging
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: glob:staging-*
+spec:
+  releaseName: echo-staging
+  chart:
+    git: git@github.com:tomikonio/gitops
+    path: helm-charts/echo
+    ref: master
+  values:
+    image: shukiyahu/echo_ex:staging-44658b37e5adec20fdaa35b1ad7e0fa6bb02a4bc
+    replicaCount: 1

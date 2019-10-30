@@ -1,0 +1,10 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: echo
+data:
+  default.yaml: |
+    port: "3000"
+    loglevel: "debug"
+    persist: "true"
+    mongodburl: "mongodb://echo:mypassword@mongo-mongodb.default.svc.cluster.local:27017/echo"

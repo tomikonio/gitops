@@ -14,5 +14,5 @@ spec:
     path: helm-charts/echo
     ref: master
   values:
-    image: shukiyahu/echo_ex:1.0.18
+    image: shukiyahu/echo_ex:1.0.19
     replicaCount: 1

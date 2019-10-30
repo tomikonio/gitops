@@ -14,5 +14,5 @@ spec:
     path: helm-charts/echo
     ref: master
   values:
-    image: gcr.io/eternal-psyche-256708/echo_ex:1.0.16
+    image: shukiyahu/echo_ex:1.0.18
     replicaCount: 1

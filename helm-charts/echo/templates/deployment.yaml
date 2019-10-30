@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: echo
-          image: gcr.io/eternal-psyche-256708/echoofer:v1
+          image: {{ .Values.image }}
           resources:
             requests:
               memory: "32Mi"

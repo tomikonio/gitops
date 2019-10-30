@@ -4,6 +4,8 @@
 
 # replicaCount: 1
 
+image: gcr.io/eternal-psyche-256708/echo_ex:1.0.16
+
 # image:
 #   repository: nginx
 #   tag: stable

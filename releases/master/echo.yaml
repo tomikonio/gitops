@@ -1,0 +1,20 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: echo-master
+  namespace: masterio
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: semver:~1.0
+spec:
+  releaseName: echo-master
+  chart:
+    git: git@github.com:tomikonio/gitops
+    path: helm-charts/echo
+    ref: master
+  values:
+    image: gcr.io/eternal-psyche-256708/echo_ex:1.0.16
+    replicaCount: 1
+    hpa:
+      enabled: false

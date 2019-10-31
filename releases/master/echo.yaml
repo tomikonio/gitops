@@ -17,3 +17,4 @@ spec:
     image: shukiyahu/echo_ex:1.0.19
     replicaCount: 1
     name: echo
+    namespace: masterion

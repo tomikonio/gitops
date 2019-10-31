@@ -14,7 +14,7 @@ spec:
     path: helm-charts/echo
     ref: master
   values:
-    image: shukiyahu/echo_ex:staging-ee812e00b5a0c676c50b4675c370591354efc6c6
+    image: shukiyahu/echo_ex:staging-82456b23b1071a39aa80122f38cb64de91166688
     replicaCount: 1
     name: echo-staging
     namespace: staging

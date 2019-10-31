@@ -14,7 +14,7 @@ spec:
     path: helm-charts/echo
     ref: master
   values:
-    image: shukiyahu/echo_ex:dev-1f3cff2594f2381f97be6722d38e7fd843bc2a50
+    image: shukiyahu/echo_ex:dev-29070a22e305be29c4bdd5f0ddaa06e0821f1848
     replicaCount: 1
     name: echo-dev
     namespace: dev

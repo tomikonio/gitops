@@ -14,7 +14,7 @@ spec:
     path: helm-charts/echo
     ref: master
   values:
-    image: shukiyahu/echo_ex:1.0.29
+    image: shukiyahu/echo_ex:1.0.30
     replicaCount: 1
     name: echo-production
     namespace: production

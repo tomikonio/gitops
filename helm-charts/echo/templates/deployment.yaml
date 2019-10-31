@@ -31,7 +31,7 @@ spec:
               mountPath: /app/config
       volumes:
         - name: config-volume
-          secret:
-            secretName: {{ .Release.Name }}
-          # configMap:
-          #   name: {{ .Values.name }}
+          # secret:
+          #   secretName: {{ .Release.Name }}
+          configMap:
+            name: {{ .Values.name }}

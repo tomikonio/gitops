@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: echo
+  name: {{ .Values.name }}
 spec:
   selector:
-    app: echo
+    app: {{ .Values.name }}
   type: ClusterIP
   ports:
     - port: 80

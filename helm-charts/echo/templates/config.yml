@@ -1,7 +1,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: echo
+  name: {{ .Values.name }}
 data:
   default.yaml: |
     port: "3000"

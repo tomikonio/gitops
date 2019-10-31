@@ -4,6 +4,7 @@
 
 image: shukiyahu/echo_ex:1.0.18
 replicaCount: 1
+name: echo
 
 # image:
 #   repository: nginx

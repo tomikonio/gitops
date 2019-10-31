@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: echo
+  name: {{ .Values.name }}
   labels:
-    app: echo
+    app: {{ .Values.name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: echo
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: echo
+        app: {{ .Values.name }}
     spec:
       containers:
-        - name: echo
+        - name: {{ .Values.name }}
           image: {{ .Values.image }}
           resources:
             requests:
@@ -32,4 +32,4 @@ spec:
       volumes:
         - name: config-volume
           configMap:
-            name: echo
+            name: {{ .Values.name }}

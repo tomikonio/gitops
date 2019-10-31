@@ -16,3 +16,4 @@ spec:
   values:
     image: shukiyahu/echo_ex:staging-44658b37e5adec20fdaa35b1ad7e0fa6bb02a4bc
     replicaCount: 1
+    name: echo-staging

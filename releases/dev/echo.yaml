@@ -18,3 +18,5 @@ spec:
     replicaCount: 1
     name: echo-dev
     namespace: dev
+    data:
+      persist: "false"

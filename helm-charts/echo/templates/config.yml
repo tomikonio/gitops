@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.name }}
 data:
   default.yaml: |
-    port: "3000"
-    loglevel: "debug"
-    persist: "true"
-    mongodburl: "mongodb://echo:mypassword@mongo-mongodb.default.svc.cluster.local:27017/echo"
+    port: {{ .Values.data.port }}
+    loglevel: {{ .Values.data.loglevel }}
+    persist: {{ .Values.data.persist }}
+    mongodburl: {{ .Values.data.mongodburl }}

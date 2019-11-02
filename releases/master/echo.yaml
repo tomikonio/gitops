@@ -18,7 +18,7 @@ spec:
     replicaCount: 1
     name: echo-production
     namespace: production
-    hostname: ""
+    hostname: shushu.zapto.org
   rollback:
     # If set, will perform rollbacks for this release.
     enable: true

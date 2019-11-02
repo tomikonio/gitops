@@ -18,7 +18,7 @@ spec:
     replicaCount: 1
     name: echo-dev
     namespace: dev
-    hostname: dev
+    hostname: shushu.ddnsking.com
     data:
       persist: "false"
   rollback:

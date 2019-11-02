@@ -4,9 +4,10 @@ metadata:
   name: {{ .Release.Name }}
 spec:
   rules:
-    - http:
+    - host: {{ .Values.hostname }}
+      http:
         paths:
-          - path: /{{ .Values.hostname }}
+          - path: /
             backend:
               serviceName: {{ .Values.name }}
               servicePort: 80

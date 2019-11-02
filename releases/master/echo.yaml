@@ -18,3 +18,4 @@ spec:
     replicaCount: 1
     name: echo-production
     namespace: production
+    hostname: ""

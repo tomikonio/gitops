@@ -4,10 +4,10 @@ metadata:
   name: {{ .Release.Name }}
 spec:
   rules:
-    - host: http://shushu.zapto.org/{{ .Values.hostname }}
+    - host: shushu.zapto.org
       http:
         paths:
-          - path: /
+          - path: /{{ .Values.hostname }}
             backend:
               serviceName: {{ .Values.name }}
               servicePort: 80

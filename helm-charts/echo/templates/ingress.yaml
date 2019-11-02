@@ -4,8 +4,7 @@ metadata:
   name: {{ .Release.Name }}
 spec:
   rules:
-    - host: shushu.zapto.org
-      http:
+    - http:
         paths:
           - path: /{{ .Values.hostname }}
             backend:

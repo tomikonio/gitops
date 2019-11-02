@@ -1,8 +1,9 @@
-kind: ConfigMap
+kind: Secret
 apiVersion: v1
 metadata:
   name: {{ .Values.name }}
-data:
+type: Opaque
+stringData:
   default.yaml: |
     port: {{ .Values.data.port }}
     loglevel: {{ .Values.data.loglevel }}

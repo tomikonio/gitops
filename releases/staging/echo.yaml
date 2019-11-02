@@ -21,3 +21,18 @@ spec:
     hostname: staging
     data:
       mongodburl: "mongodb://echo:mypassword@mongo-mongodb.default.svc.cluster.local:27017/echo-staging"
+  rollback:
+    # If set, will perform rollbacks for this release.
+    enable: true
+    # If set, will force resource update through delete/recreate if
+    # needed.
+    force: true
+    # Prevent hooks from running during rollback.
+    disableHooks: false
+    # Time in seconds to wait for any individual Kubernetes operation.
+    timeout: 300
+    # If set, will wait until all Pods, PVCs, Services, and minimum
+    # number of Pods of a Deployment are in a ready state before
+    # marking the release as successful. It will wait for as long
+    # as the set timeout.
+    wait: false
